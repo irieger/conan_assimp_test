@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 3.15)
-project(conan_assimp_test CXX)
+project(game CXX)
 
-find_package(assimp REQUIRED CONFIG)
+find_package(assimp REQUIRED)
 
-add_subdirectory(src)
-# add_executable(${PROJECT_NAME} src/conan_assimp_test.cpp src/main.cpp)
-# target_link_libraries(${PROJECT_NAME} PRIVATE assimp::assimp)
-# target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_11)
+add_executable(game src/main.cpp)
+target_link_libraries(game assimp::assimp)
 
-# install(TARGETS ${PROJECT_NAME} DESTINATION "."
-#         RUNTIME DESTINATION bin
-#         ARCHIVE DESTINATION lib
-#         LIBRARY DESTINATION lib
-#         )
+
+install(TARGETS game DESTINATION "."
+        RUNTIME DESTINATION bin
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib
+        )

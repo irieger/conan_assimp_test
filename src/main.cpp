@@ -1,26 +1,20 @@
-#include "conan_assimp_test.h"
-#include <iostream>
+#include <vector>
+#include <string>
+
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
-#include <assimp/postprocess.h>
 
-int main(int argc, char **argv) {
-    if (argc < 2) {
-        std::cerr << "Need at least one argument" << std::endl;
-        return 1;
-    }
+int main(int argc, char** argv){
 
     Assimp::Importer importer;
-    const aiScene* scene = importer.ReadFile(argv[1],
-        aiProcess_CalcTangentSpace       |
-        aiProcess_Triangulate            |
-        aiProcess_JoinIdenticalVertices  |
-        aiProcess_SortByPType);
 
-    if (!scene) {
-        return 1;
+    std::string sfmDataFilename;
+    const aiScene* scene = importer.ReadFile(sfmDataFilename, 0);
+    if (!scene)
+    {
+        return EXIT_FAILURE;
     }
 
-    // conan_assimp_test();
-    return 0;
+    return EXIT_SUCCESS;
+
 }

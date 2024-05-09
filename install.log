@@ -1,0 +1,288 @@
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Linux
+[conf]
+tools.build:jobs=5
+tools.build:verbosity=verbose
+tools.compilation:verbosity=verbose
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+tools.system.package_manager:sudo_askpass=True
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Linux
+[conf]
+tools.build:jobs=5
+tools.build:verbosity=verbose
+tools.compilation:verbosity=verbose
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+tools.system.package_manager:sudo_askpass=True
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py (conan_assimp_test/0.0.1): /home/esteban/Documents/git/conan_assimp_test/conanfile.py
+Requirements
+    assimp/5.4.3#692649a2b1f19bc8991d96320a8a2b81 - Cache
+    boost/1.86.0#eda761979eec4c0fb143027ed15123a2 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519 - Cache
+    bzip2/1.0.8#457c272f7da34cb9c67456dd217d36c4 - Cache
+    ceres-solver/2.2.0#ffe493f7be8e4e680694d8c2fd1ea9c8 - Cache
+    clipper/6.4.2#8b2db6cabf546e0e937d75dd8b0d4b6d - Cache
+    coin-clp/1.17.9#ac25819cda1fab1c77394fcec798a184 - Cache
+    coin-lemon/1.3.1#6ef76380e4ff7f84fefa0658a5739633 - Cache
+    coin-osi/0.108.10#11690aa199a235e9b3c4c4b5dbf6c13c - Cache
+    coin-utils/2.11.11#2f81c3b721bf77e306e2ca9e461b3955 - Cache
+    draco/1.5.6#c4fd529402e7954b0ed2305a386b0973 - Cache
+    eigen/3.4.0#2e192482a8acff96fe34766adca2b24c - Cache
+    expat/2.6.2#2d385d0d50eb5561006a7ff9e356656b - Cache
+    flann/1.9.2#9a94fb20c9db33ab6102182ee62f671c - Cache
+    fmt/10.2.1#8d582aeebdf05b6f0abe2911b926c3f4 - Cache
+    freetype/2.13.2#7934d59c447d72edcd56025dc60e1aeb - Cache
+    giflib/5.2.1#40245212d3adda9d502692704b0b35ab - Cache
+    glpk/4.48#4c71d98b2020957714f0d95d9d1cf76b - Cache
+    gmp/6.3.0#df20ffb6d21c34d67704305bcd1dea9e - Cache
+    hdf5/1.14.4.3#df1467d7374938c231edbe10e83f2bb4 - Cache
+    imath/3.1.9#2e7f5802b247baae47235b4c8d5642c9 - Cache
+    jbig/20160605#2d29fa02aacd76902e0d2cbbc24631ef - Cache
+    kuba-zip/0.3.0#cac9d58fac5e8d16395edbdcda39cd7c - Cache
+    lcms/2.14#8a8c02ab8c0631e06d705c38b171f053 - Cache
+    libbacktrace/cci.20210118#a7691bfccd8caaf66309df196790a5a1 - Cache
+    libde265/1.0.12#6e7cec8c7e3b1c9bfb6761dfc4d1dbb8 - Cache
+    libdeflate/1.19#3ea74a4549efc14d4b1202dc4bfbf602 - Cache
+    libheif/1.16.2#2552c50c9cb84cf3d0791434ba677afd - Cache
+    libiconv/1.17#73fefc1b696e069df90fd1d18aa63edd - Cache
+    libjpeg/9e#3cd27a78643419450ee6d3739514d25c - Cache
+    libpcap/1.10.4#9c418558a505bfd84509417ca3490594 - Cache
+    libpng/1.6.42#fdba4ebf89df3c55d6db0145a2a66a24 - Cache
+    libsquish/1.15#7f943e7d0ee7fc638d554d7a470a5f6c - Cache
+    libtiff/4.6.0#51d0e7e15d032aeec1b64e65c44ecd9f - Cache
+    libwebp/1.3.2#52f69c4a31c5cf033fdd9230d77a8e38 - Cache
+    lz4/1.9.4#652b313a0444c8b1d60d1bf9e95fb0a1 - Cache
+    minizip/1.2.13#75d20b6a37ef70126334467f61acadde - Cache
+    minizip-ng/4.0.3#98f2b9125867cb682e8e09bdc949b701 - Cache
+    nanoflann/1.5.2#4c081310584e55631ae5af19d4f9bab5 - Cache
+    openblas/0.3.27#c16c3dbdf45e4a4ff56f8ada8631a2f3 - Cache
+    opencolorio/2.3.2#4b74f43b6f95ecc4653f3b00713307b1 - Cache
+    openddl-parser/0.5.1#1ed71b6fc636be990a506c802bf64831 - Cache
+    openexr/3.2.4#c0ddb636133201948913e8b89d5aaf89 - Cache
+    openimageio/2.5.14.0#7215a802e6df1f910bff1b617acf53e8 - Cache
+    openjpeg/2.5.2#6f7b733e151d1bbf5ed05cbabb846828 - Cache
+    openssl/3.3.1#279e86dc2a7dded8c1fe8512e775bdb1 - Cache
+    pcl/1.14.1#6b39f19d294d972490a5d188995dd754 - Cache
+    poly2tri/cci.20130502#6f2ab4d3b3c07dc8d0b6282c14521b22 - Cache
+    ptex/2.4.2#ba6a60f9dabd40f83df6dafa24e014e9 - Cache
+    pugixml/1.14#c6afdcf73d71858303d8260b0d76ff91 - Cache
+    pystring/1.1.4#f2f8a4650090cf0138456f49842f9134 - Cache
+    qhull/8.0.1#3aaac5ed74195de160ced00fd7ce8f6c - Cache
+    rapidjson/cci.20230929#8dc0392af2b3aaea7312095f0ba53467 - Cache
+    stb/cci.20230920#ed79bd361e974a99137f214efb117eef - Cache
+    tsl-robin-map/1.2.1#a1a3af383c0dd28325b9fefc95e1e15c - Cache
+    utfcpp/4.0.1#e879ce0ad3e77ff6e04713ada5549655 - Cache
+    xz_utils/5.4.5#b885d1d79c9d30cff3803f7f551dbe66 - Cache
+    yaml-cpp/0.8.0#720ad361689101a838b2c703a49e9c26 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2 - Cache
+    zstd/1.5.5#1f239731dc45147c7fc2f54bfbde73df - Cache
+Build requirements
+    autoconf/2.71#f9307992909d7fb3df459340f1932809 - Cache
+    autoconf-archive/2023.02.20#41f23f92ac9a3f1ee71c72f2b6b03eef - Cache
+    automake/1.16.5#058bda3e21c36c9aa8425daf3c1faf50 - Cache
+    b2/5.2.1#91bc73931a0acb655947a81569ed8b80 - Cache
+    bison/3.8.2#ed1ba0c42d2ab7ab64fc3a62e9ecc673 - Cache
+    cmake/3.30.1#6d832cf2d46f6ec969ca5ed5b41f91eb - Cache
+    coin-buildtools/0.8.11#af64b1871827f604b8a0d3a560d93bfb - Cache
+    flex/2.6.4#e35bc44b3fcbcd661e0af0dc5b5b1ad4 - Cache
+    gnu-config/cci.20210814#dc430d754f465e8c74463019672fb97b - Cache
+    libtool/2.4.7#08316dad5c72c541ed21e039e4cf217b - Cache
+    m4/1.4.19#b38ced39a01e31fef5435bc634461fd2 - Cache
+    meson/1.2.1#d5d14e34214d5228747367a9c4c70b29 - Cache
+    meson/1.2.2#29cf77c283f6af08818f6fd8068c37e8 - Cache
+    meson/1.3.2#726f715cfedf3f94cc4d30a5d5d9c281 - Cache
+    ninja/1.12.1#fd583651bf0c6a901943495d49878803 - Cache
+    pkgconf/2.1.0#27f44583701117b571307cf5b5fe5605 - Cache
+Resolved version ranges
+    b2/[>=5.2 <6]: b2/5.2.1
+    cmake/[>=3.16 <4]: cmake/3.30.1
+    cmake/[>=3.18 <4]: cmake/3.30.1
+    cmake/[>=3.19 <4]: cmake/3.30.1
+    cmake/[>=3.22 <4]: cmake/3.30.1
+    coin-utils/[>=2.11.11 <3]: coin-utils/2.11.11
+    expat/[>=2.6.2 <3]: expat/2.6.2
+    ninja/[>=1.10.2 <2]: ninja/1.12.1
+    openssl/[>=1.1 <4]: openssl/3.3.1
+    zlib/[>=1.2.11 <2]: zlib/1.3.1
+Overrides
+    boost/1.84.0: ['boost/1.86.0']
+    openexr/3.2.3: ['openexr/3.2.4']
+    hdf5/1.14.3: ['hdf5/1.14.4.3']
+    opencolorio/2.3.1: ['opencolorio/2.3.2']
+    openjpeg/2.5.2: ['openjpeg/2.5.2']
+    openblas/0.3.26: ['openblas/0.3.27']
+    boost/1.83.0: ['boost/1.86.0']
+
+======== Computing necessary packages ========
+Requirements
+    assimp/5.4.3#692649a2b1f19bc8991d96320a8a2b81:98f96efc7624ac9c7808cbfd885b71952d703eee#a4830e6100b0d81dbbadb0886bc54277 - Cache
+    boost/1.86.0#eda761979eec4c0fb143027ed15123a2:715ab0d204f68ef9932e7f4d1dd61a5b3c24ccd1#19efebb4459fd0fd7b6c65fac600f850 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:40a4859ccb410e4d27426e07867eee61c5ce2b05#7abe1013e4ded340ea495261c497921e - Cache
+    bzip2/1.0.8#457c272f7da34cb9c67456dd217d36c4:432d7695adc526147073285e155d2ca0340bc76d#58eb04d3fdb530a6f24aa91bed89ea04 - Cache
+    ceres-solver/2.2.0#ffe493f7be8e4e680694d8c2fd1ea9c8:3cab540fd7e19e9c8ea39c56d6ae2b7251f8d1ed#fcb1ddba50afbb9860846f9f2ce22f3e - Cache
+    clipper/6.4.2#8b2db6cabf546e0e937d75dd8b0d4b6d:87bbb286a7517318e730f10181ac32c50f1dbc94#00f26e7f7d91180d5790641c0718cd19 - Cache
+    coin-clp/1.17.9#ac25819cda1fab1c77394fcec798a184:ab643e2667928ae804203a026660f3f6af82d277#ca53e6e1dd298dc72b0b3e2d6f33f97b - Cache
+    coin-lemon/1.3.1#6ef76380e4ff7f84fefa0658a5739633:87bbb286a7517318e730f10181ac32c50f1dbc94#68aa8ebdedbd35c6985a5119df2d9484 - Cache
+    coin-osi/0.108.10#11690aa199a235e9b3c4c4b5dbf6c13c:5a43295207d13fe58595d4009a9fb1f80e60c8ae#a81af03b8213716936ed529046e31a59 - Cache
+    coin-utils/2.11.11#2f81c3b721bf77e306e2ca9e461b3955:c1973f6f4dafb0cec1ea14571d53050065f6f3e7#05eb38142dfcb76ebe85d8be05ad8423 - Cache
+    draco/1.5.6#c4fd529402e7954b0ed2305a386b0973:e7e01b57b0d814a5aa6f37568a1fc9c2823a5dc3#f64679ff0a7b7544d7d139782aa9fded - Cache
+    eigen/3.4.0#2e192482a8acff96fe34766adca2b24c:da39a3ee5e6b4b0d3255bfef95601890afd80709#b2e7c2d86c5d1dbefc534889aa72e12c - Cache
+    expat/2.6.2#2d385d0d50eb5561006a7ff9e356656b:aded8fb718ce53657d2b174704f00cbccc67d052#5d252f71c390d728b2a09732cfd51bdd - Cache
+    flann/1.9.2#9a94fb20c9db33ab6102182ee62f671c:35d4043af8409d0c4708a413b9a86a35019d0253#85a0ad73eb7428ea6e516d0ed540ad1c - Cache
+    fmt/10.2.1#8d582aeebdf05b6f0abe2911b926c3f4:03b63a6d963269e5adb57af4de2136006cf44110#93c64c27c120c8a8ecc6a3ec8fabb783 - Cache
+    freetype/2.13.2#7934d59c447d72edcd56025dc60e1aeb:ca0f8de67a8f18266df61435c2205c4fe6fa58b7#be4c51d5c63796b9f7329122903dcf18 - Cache
+    giflib/5.2.1#40245212d3adda9d502692704b0b35ab:878ca87e1d3b2a3850fd84bf6b6da0616041a33f#6d7a4920bbdd0fb35a01dad8e2b220c8 - Cache
+    glpk/4.48#4c71d98b2020957714f0d95d9d1cf76b:48f8c09decf9bb9f680bcb637b1c2184cfcd3d1c#1ee3b447a511d28763e4fa148284e5ab - Cache
+    gmp/6.3.0#df20ffb6d21c34d67704305bcd1dea9e:48115b57f44cff468feba114458d57dca3a34088#5f8da34b2f268f75f05176c1eb6c2ac4 - Cache
+    hdf5/1.14.4.3#df1467d7374938c231edbe10e83f2bb4:ff689d9fcc09fce2870bd0e188ae009e68c62d56#e1561f1fa97bdf6037723d87a54ce7b5 - Cache
+    imath/3.1.9#2e7f5802b247baae47235b4c8d5642c9:87bbb286a7517318e730f10181ac32c50f1dbc94#1d4130d0bc495a53ed39cbb7890e4554 - Cache
+    jbig/20160605#2d29fa02aacd76902e0d2cbbc24631ef:95b90d93a7025ab3fe00c19cf61dab2ec1bf1651#dfff47d609e9f66919a9b8291753f8a9 - Cache
+    kuba-zip/0.3.0#cac9d58fac5e8d16395edbdcda39cd7c:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#be92a630e0650e8605f3d202ae905e3a - Cache
+    lcms/2.14#8a8c02ab8c0631e06d705c38b171f053:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#edcb6811c6b184f7b3a4a67ceb08b0af - Cache
+    libbacktrace/cci.20210118#a7691bfccd8caaf66309df196790a5a1:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#bf730b91f1be1b8484aaeef3de98619e - Cache
+    libde265/1.0.12#6e7cec8c7e3b1c9bfb6761dfc4d1dbb8:9f7871587efe2eca4ff7761a840b23439489e128#6e62fb55a6163e364703236db73e682d - Cache
+    libdeflate/1.19#3ea74a4549efc14d4b1202dc4bfbf602:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#4ffd16bf076a72f3e3cb68b7fcd7bdbc - Cache
+    libheif/1.16.2#2552c50c9cb84cf3d0791434ba677afd:76385b89316e7434cac1f0017520605283fede9a#401f3db7170ed8e044ecc6bd44f6a674 - Cache
+    libiconv/1.17#73fefc1b696e069df90fd1d18aa63edd:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#6b81c0a6b9b0e150449b2108c82c30bd - Cache
+    libjpeg/9e#3cd27a78643419450ee6d3739514d25c:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#cc1d6a1b2372d4fe7d1e5f4178e48d3d - Cache
+    libpcap/1.10.4#9c418558a505bfd84509417ca3490594:ef984ee65a36f092b237951a5724c76820b43254#2a1420a8be07d37578b09523b5276a0b - Cache
+    libpng/1.6.42#fdba4ebf89df3c55d6db0145a2a66a24:89f26a89b6e56e1284482eb7ac65948ce05dff35#cb8e42df23069227798a0c1240ec94d3 - Cache
+    libsquish/1.15#7f943e7d0ee7fc638d554d7a470a5f6c:e8a049e17e702fcb118555cc38a564cb117c8731#57206c79074fff9f2524a6022f29d28f - Cache
+    libtiff/4.6.0#51d0e7e15d032aeec1b64e65c44ecd9f:7b6617e6ca3a37f96b757df702bad82edd1fd117#31e7106210145bb068d9a564517ea974 - Cache
+    libwebp/1.3.2#52f69c4a31c5cf033fdd9230d77a8e38:0d9934d6bab23c047abf9b10238dcb9caf263430#f122b79b09f6bfb1e7119b9c3c76e7b1 - Cache
+    lz4/1.9.4#652b313a0444c8b1d60d1bf9e95fb0a1:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#c7eacc4c71870cd6891a5506dace6321 - Cache
+    minizip-ng/4.0.3#98f2b9125867cb682e8e09bdc949b701:f920b843d83212d50f34dd21b44e903ae9a38998#767ce50c3ed711ba04907c841250670f - Cache
+    minizip/1.2.13#75d20b6a37ef70126334467f61acadde:24b3153ae2c70c8def062cd8ca1b61bd50698727#bdb076871fc68004b09b551c854d0620 - Cache
+    nanoflann/1.5.2#4c081310584e55631ae5af19d4f9bab5:da39a3ee5e6b4b0d3255bfef95601890afd80709#7f30d3e427a59f782eae8f43f3d85769 - Cache
+    openblas/0.3.27#c16c3dbdf45e4a4ff56f8ada8631a2f3:69b0035d3356796e6b7a2981ab0fcb1436070341#71d5fa9f4af20d4d385efd68a941bc8d - Cache
+    opencolorio/2.3.2#4b74f43b6f95ecc4653f3b00713307b1:fe232086e8fcf5e1d40f73e62a611b6d79a7acbf#4f19a9d3695522dab19aded3cbb46543 - Cache
+    openddl-parser/0.5.1#1ed71b6fc636be990a506c802bf64831:87bbb286a7517318e730f10181ac32c50f1dbc94#954670d806599d88269db2ac548ebf02 - Cache
+    openexr/3.2.4#c0ddb636133201948913e8b89d5aaf89:603e63f9fa85b853f11261104ef5a5d9dbfca89e#b4283926cbdccbb7e0d129e34d1626ef - Cache
+    openimageio/2.5.14.0#7215a802e6df1f910bff1b617acf53e8:7a14623829d6dab9e3988abbadb83f8b16058895#296f5d430f0ab54541c367e2737bd5c0 - Cache
+    openjpeg/2.5.2#6f7b733e151d1bbf5ed05cbabb846828:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#b130cc78802c3e907d3533fde0b66dff - Cache
+    openssl/3.3.1#279e86dc2a7dded8c1fe8512e775bdb1:e1e5437fbafc0588bdcff97c905793e695877ac3#ba40eaede57dd722b6c0ac6fb24e6d7d - Cache
+    pcl/1.14.1#6b39f19d294d972490a5d188995dd754:7c6170d1569bda05bc18af5aab8b1d1007334c73#9b75b3f083034fb8ee5538c8e2a3977d - Cache
+    poly2tri/cci.20130502#6f2ab4d3b3c07dc8d0b6282c14521b22:87bbb286a7517318e730f10181ac32c50f1dbc94#08b828b708422d9b427642b7c881d08a - Cache
+    ptex/2.4.2#ba6a60f9dabd40f83df6dafa24e014e9:b9e43745f2c2c551dfad5e9cf767f80cbe718473#63b23729264b0b71e6c356bff6955fb1 - Cache
+    pugixml/1.14#c6afdcf73d71858303d8260b0d76ff91:0262c5fda14237f70253cb3554da466c0986a5ef#d3f7862a8efe9fb40c7def151127f868 - Cache
+    pystring/1.1.4#f2f8a4650090cf0138456f49842f9134:87bbb286a7517318e730f10181ac32c50f1dbc94#ba85850681ba710468dfabb5a3fce779 - Cache
+    qhull/8.0.1#3aaac5ed74195de160ced00fd7ce8f6c:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#601cfbe397384e0532491346d021c7e7 - Cache
+    xz_utils/5.4.5#b885d1d79c9d30cff3803f7f551dbe66:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#0aad4225333ac9618a452e5654a0aa10 - Cache
+    yaml-cpp/0.8.0#720ad361689101a838b2c703a49e9c26:87bbb286a7517318e730f10181ac32c50f1dbc94#e665e771b921e5bac31a2a2212465e28 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#274061dcec08a0f95c07639f5fff02e9 - Cache
+    zstd/1.5.5#1f239731dc45147c7fc2f54bfbde73df:37f60e96fabd90de19a29ec7e7968b118c0cedf4#a7d55f21ab874f7ccb67bedd344e1183 - Cache
+Build requirements
+Skipped binaries
+    rapidjson/cci.20230929, stb/cci.20230920, tsl-robin-map/1.2.1, utfcpp/4.0.1, autoconf-archive/2023.02.20, autoconf/2.71, automake/1.16.5, b2/5.2.1, bison/3.8.2, cmake/3.30.1, coin-buildtools/0.8.11, flex/2.6.4, gnu-config/cci.20210814, libtool/2.4.7, m4/1.4.19, meson/1.2.1, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
+
+======== Installing packages ========
+brotli/1.1.0: Already installed! (1 of 56)
+bzip2/1.0.8: Already installed! (2 of 56)
+clipper/6.4.2: Already installed! (3 of 56)
+coin-lemon/1.3.1: Already installed! (4 of 56)
+draco/1.5.6: Already installed! (5 of 56)
+eigen/3.4.0: Already installed! (6 of 56)
+expat/2.6.2: Already installed! (7 of 56)
+fmt/10.2.1: Already installed! (8 of 56)
+giflib/5.2.1: Already installed! (9 of 56)
+imath/3.1.9: Already installed! (10 of 56)
+jbig/20160605: Already installed! (11 of 56)
+kuba-zip/0.3.0: Already installed! (12 of 56)
+libbacktrace/cci.20210118: Already installed! (13 of 56)
+libde265/1.0.12: Already installed! (14 of 56)
+libdeflate/1.19: Already installed! (15 of 56)
+libiconv/1.17: Already installed! (16 of 56)
+libjpeg/9e: Already installed! (17 of 56)
+libsquish/1.15: Already installed! (18 of 56)
+libwebp/1.3.2: Already installed! (19 of 56)
+lz4/1.9.4: Already installed! (20 of 56)
+nanoflann/1.5.2: Already installed! (21 of 56)
+openblas/0.3.27: Already installed! (22 of 56)
+openddl-parser/0.5.1: Already installed! (23 of 56)
+openjpeg/2.5.2: Already installed! (24 of 56)
+poly2tri/cci.20130502: Already installed! (25 of 56)
+pugixml/1.14: Already installed! (26 of 56)
+pystring/1.1.4: Already installed! (27 of 56)
+qhull/8.0.1: Already installed! (28 of 56)
+xz_utils/5.4.5: Already installed! (29 of 56)
+yaml-cpp/0.8.0: Already installed! (30 of 56)
+zlib/1.3.1: Already installed! (31 of 56)
+zstd/1.5.5: Already installed! (32 of 56)
+gmp/6.3.0: Already installed! (33 of 56)
+lcms/2.14: Already installed! (34 of 56)
+libpcap/1.10.4: Already installed! (35 of 56)
+boost/1.86.0: Already installed! (36 of 56)
+ceres-solver/2.2.0: Already installed! (37 of 56)
+flann/1.9.2: Already installed! (38 of 56)
+hdf5/1.14.4.3: Already installed! (39 of 56)
+libheif/1.16.2: Already installed! (40 of 56)
+libpng/1.6.42: Already installed! (41 of 56)
+libtiff/4.6.0: Already installed! (42 of 56)
+minizip/1.2.13: Already installed! (43 of 56)
+openexr/3.2.4: Already installed! (44 of 56)
+openssl/3.3.1: Already installed! (45 of 56)
+ptex/2.4.2: Already installed! (46 of 56)
+glpk/4.48: Already installed! (47 of 56)
+assimp/5.4.3: Already installed! (48 of 56)
+freetype/2.13.2: Already installed! (49 of 56)
+minizip-ng/4.0.3: Already installed! (50 of 56)
+pcl/1.14.1: Already installed! (51 of 56)
+coin-utils/2.11.11: Already installed! (52 of 56)
+opencolorio/2.3.2: Already installed! (53 of 56)
+opencolorio/2.3.2: Appending PATH env var with: /home/esteban/.conan2/p/b/opence66fc1d96f40e/p/bin
+coin-osi/0.108.10: Already installed! (54 of 56)
+openimageio/2.5.14.0: Already installed! (55 of 56)
+coin-clp/1.17.9: Already installed! (56 of 56)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: imath/3.1.9, pcl/1.14.1, flann/1.9.2, fmt/10.2.1, xz_utils/5.4.5, libpng/1.6.42, openjpeg/2.5.2, libtiff/4.6.0, openddl-parser/0.5.1, openimageio/2.5.14.0, libiconv/1.17, zstd/1.5.5, openblas/0.3.27, minizip-ng/4.0.3, openssl/3.3.1, qhull/8.0.1, libwebp/1.3.2, lz4/1.9.4, zlib/1.3.1, giflib/5.2.1, coin-lemon/1.3.1, eigen/3.4.0, boost/1.86.0, ptex/2.4.2, bzip2/1.0.8, gmp/6.3.0, brotli/1.1.0, kuba-zip/0.3.0, libjpeg/9e, hdf5/1.14.4.3, libdeflate/1.19, expat/2.6.2, opencolorio/2.3.2, ceres-solver/2.2.0, openexr/3.2.4, freetype/2.13.2, clipper/6.4.2
+WARN: deprecated:     'cpp_info.build_modules' used in: openssl/3.3.1, xz_utils/5.4.5, hdf5/1.14.4.3, freetype/2.13.2, openjpeg/2.5.2, yaml-cpp/0.8.0, lz4/1.9.4, ceres-solver/2.2.0, libde265/1.0.12, bzip2/1.0.8
+WARN: deprecated:     'env_info' used in: giflib/5.2.1, openssl/3.3.1, glpk/4.48, freetype/2.13.2, jbig/20160605, boost/1.86.0, qhull/8.0.1, libiconv/1.17, opencolorio/2.3.2, openexr/3.2.4, libde265/1.0.12, zstd/1.5.5, bzip2/1.0.8, openblas/0.3.27, coin-clp/1.17.9
+WARN: deprecated:     'cpp_info.filenames' used in: ptex/2.4.2, minizip-ng/4.0.3, freetype/2.13.2, boost/1.86.0
+WARN: deprecated:     'user_info' used in: freetype/2.13.2, boost/1.86.0
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py (conan_assimp_test/0.0.1): Calling generate()
+conanfile.py (conan_assimp_test/0.0.1): Generators folder: /home/esteban/Documents/git/conan_assimp_test/build/Release/generators
+conanfile.py (conan_assimp_test/0.0.1): CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py (conan_assimp_test/0.0.1): CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators/conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py (conan_assimp_test/0.0.1): CMakeToolchain generated: /home/esteban/Documents/git/conan_assimp_test/build/Release/generators/CMakePresets.json
+conanfile.py (conan_assimp_test/0.0.1): CMakeToolchain generated: /home/esteban/Documents/git/conan_assimp_test/CMakeUserPresets.json
+conanfile.py (conan_assimp_test/0.0.1): CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(assimp)
+    find_package(OpenImageIO)
+    find_package(Ceres)
+    find_package(Clp)
+    find_package(CoinUtils)
+    find_package(LEMON)
+    find_package(nanoflann)
+    find_package(PCL)
+    find_package(Eigen3)
+    target_link_libraries(... assimp::assimp openimageio::openimageio Ceres::ceres Coin::Clp Coin::CoinUtils LEMON::LEMON nanoflann PCL::PCL Eigen3::Eigen)
+conanfile.py (conan_assimp_test/0.0.1): Generating aggregated env files
+conanfile.py (conan_assimp_test/0.0.1): Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+Install finished successfully

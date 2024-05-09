@@ -1,8 +1,0 @@
-add_subdirectory(calibration)
-add_subdirectory(camera)
-add_subdirectory(cmdline)
-add_subdirectory(dataio)
-add_subdirectory(image)
-add_subdirectory(sfmData)
-add_subdirectory(sfmDataIO)
-add_subdirectory(system)

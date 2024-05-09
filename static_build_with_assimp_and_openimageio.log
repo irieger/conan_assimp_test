@@ -1,0 +1,440 @@
+
+======== Exporting recipe to the cache ========
+conan_assimp_test/0.0.1: Exporting package recipe: /home/esteban/Documents/git/conan_assimp_test/conanfile.py
+conan_assimp_test/0.0.1: Copied 1 '.py' file: conanfile.py
+conan_assimp_test/0.0.1: Copied 1 '.md' file: README.md
+conan_assimp_test/0.0.1: Copied 1 '.txt' file: CMakeLists.txt
+conan_assimp_test/0.0.1: Copied 1 '.cpp' file: main.cpp
+conan_assimp_test/0.0.1: Exported to cache folder: /home/esteban/.conan2/p/conane3a4053f718d4/e
+conan_assimp_test/0.0.1: Exported: conan_assimp_test/0.0.1#9959898ee4910b6bc92c3756b6a262e1 (2024-10-29 21:35:47 UTC)
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Linux
+[conf]
+tools.build:jobs=5
+tools.build:verbosity=verbose
+tools.compilation:verbosity=verbose
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+tools.system.package_manager:sudo_askpass=True
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Linux
+[conf]
+tools.build:jobs=5
+tools.build:verbosity=verbose
+tools.compilation:verbosity=verbose
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+tools.system.package_manager:sudo_askpass=True
+
+
+======== Computing dependency graph ========
+Graph root
+    cli
+Requirements
+    assimp/5.4.3#692649a2b1f19bc8991d96320a8a2b81 - Cache
+    autoconf/2.71#f9307992909d7fb3df459340f1932809 - Cache
+    automake/1.16.5#058bda3e21c36c9aa8425daf3c1faf50 - Cache
+    boost/1.84.0#a3599eafc99ffda1322c752cca0bfc10 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519 - Cache
+    bzip2/1.0.8#457c272f7da34cb9c67456dd217d36c4 - Cache
+    clipper/6.4.2#8b2db6cabf546e0e937d75dd8b0d4b6d - Cache
+    conan_assimp_test/0.0.1#9959898ee4910b6bc92c3756b6a262e1 - Cache
+    cpuinfo/cci.20231129#15e94782b128bee8bfd047f6102a4d21 - Cache
+    dav1d/1.4.3#5e2459e132c77183bd16d23d12fd8f4a - Cache
+    draco/1.5.6#c4fd529402e7954b0ed2305a386b0973 - Cache
+    expat/2.6.2#2d385d0d50eb5561006a7ff9e356656b - Cache
+    ffmpeg/6.1#d711645f40a8decb9f7c0217f8828f55 - Cache
+    flac/1.4.2#d4051f8b37ee93725dea40dfd6a10168 - Cache
+    fmt/10.2.1#8d582aeebdf05b6f0abe2911b926c3f4 - Cache
+    freetype/2.13.2#7934d59c447d72edcd56025dc60e1aeb - Cache
+    giflib/5.2.1#40245212d3adda9d502692704b0b35ab - Cache
+    hdf5/1.14.3#98d357e3200ae73e995b284ef199d919 - Cache
+    imath/3.1.9#2e7f5802b247baae47235b4c8d5642c9 - Cache
+    jbig/20160605#2d29fa02aacd76902e0d2cbbc24631ef - Cache
+    kuba-zip/0.3.0#cac9d58fac5e8d16395edbdcda39cd7c - Cache
+    lcms/2.14#8a8c02ab8c0631e06d705c38b171f053 - Cache
+    libalsa/1.2.10#e64d5e1ced869a2f676145bab4f4a181 - Cache
+    libaom-av1/3.6.1#a2b22c70d6fce43887881431808ab8a6 - Cache
+    libbacktrace/cci.20210118#a7691bfccd8caaf66309df196790a5a1 - Cache
+    libcap/2.69#7ef2d60864c2e58e89db957be936dc49 - Cache
+    libde265/1.0.12#6e7cec8c7e3b1c9bfb6761dfc4d1dbb8 - Cache
+    libdeflate/1.19#3ea74a4549efc14d4b1202dc4bfbf602 - Cache
+    libfdk_aac/2.0.3#0115f6598be7303e042684e3a846b12d - Cache
+    libheif/1.16.2#2552c50c9cb84cf3d0791434ba677afd - Cache
+    libiconv/1.17#73fefc1b696e069df90fd1d18aa63edd - Cache
+    libjpeg/9e#3cd27a78643419450ee6d3739514d25c - Cache
+    libmp3lame/3.100#44b12d19316eb2b223d98d3e75dae438 - Cache
+    libpng/1.6.42#fdba4ebf89df3c55d6db0145a2a66a24 - Cache
+    libsndfile/1.2.2#b3662f832e29507e8d9840a43737cc14 - Cache
+    libsquish/1.15#7f943e7d0ee7fc638d554d7a470a5f6c - Cache
+    libsvtav1/2.1.0#d8c1783004eefc3980710bbc72ba8a4f - Cache
+    libtiff/4.6.0#51d0e7e15d032aeec1b64e65c44ecd9f - Cache
+    libtool/2.4.7#08316dad5c72c541ed21e039e4cf217b - Cache
+    libvpx/1.14.1#3b2a56aea1e29b9a8f7753030c620f38 - Cache
+    libwebp/1.3.2#52f69c4a31c5cf033fdd9230d77a8e38 - Cache
+    libx264/cci.20240224#3c88c23b44dfb42c6d5ccbc5c04900c7 - Cache
+    libx265/3.4#719e50b2b2c3fd1b9133fea12da42c62 - Cache
+    m4/1.4.19#b38ced39a01e31fef5435bc634461fd2 - Cache
+    minizip/1.2.13#75d20b6a37ef70126334467f61acadde - Cache
+    minizip-ng/4.0.3#98f2b9125867cb682e8e09bdc949b701 - Cache
+    mpg123/1.31.2#ce831c936b2284e2066ab3dc58a2628e - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef - Cache
+    opencolorio/2.3.1#0f3cd8950a2ca0fee0b2b1e04d676f52 - Cache
+    openddl-parser/0.5.1#1ed71b6fc636be990a506c802bf64831 - Cache
+    openexr/3.2.3#9729562cfe706ed8d5a9a7f398d09eab - Cache
+    openh264/2.4.1#f65570895428516317d5236ac3bc5360 - Cache
+    openimageio/2.5.16.0#0f58c8d82dd64a165ab3d436fe2f4609 - Cache
+    openjpeg/2.5.2#6f7b733e151d1bbf5ed05cbabb846828 - Cache
+    openssl/3.3.1#279e86dc2a7dded8c1fe8512e775bdb1 - Cache
+    opus/1.4#54631f551fc450783fb2df8cd63f80a2 - Cache
+    poly2tri/cci.20130502#6f2ab4d3b3c07dc8d0b6282c14521b22 - Cache
+    ptex/2.4.2#ba6a60f9dabd40f83df6dafa24e014e9 - Cache
+    pugixml/1.14#c6afdcf73d71858303d8260b0d76ff91 - Cache
+    pulseaudio/14.2#30afeff38a7770cb9cda17a66da49a19 - Cache
+    pystring/1.1.4#f2f8a4650090cf0138456f49842f9134 - Cache
+    rapidjson/cci.20230929#8dc0392af2b3aaea7312095f0ba53467 - Cache
+    stb/cci.20230920#ed79bd361e974a99137f214efb117eef - Cache
+    tsl-robin-map/1.2.1#a1a3af383c0dd28325b9fefc95e1e15c - Cache
+    utfcpp/4.0.1#e879ce0ad3e77ff6e04713ada5549655 - Cache
+    vaapi/system#9fa40059fb979af4f9b301b84fb2dfa1 - Cache
+    vdpau/system#bdd7d010c4e3d8762a8f6f08a3cf6760 - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6 - Cache
+    xorg/system#f626cbdd0ba57d9c53bce2d8b9362fad - Cache
+    xz_utils/5.4.5#b885d1d79c9d30cff3803f7f551dbe66 - Cache
+    yaml-cpp/0.8.0#720ad361689101a838b2c703a49e9c26 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2 - Cache
+    zstd/1.5.5#1f239731dc45147c7fc2f54bfbde73df - Cache
+Build requirements
+    autoconf/2.71#f9307992909d7fb3df459340f1932809 - Cache
+    automake/1.16.5#058bda3e21c36c9aa8425daf3c1faf50 - Cache
+    b2/5.2.1#91bc73931a0acb655947a81569ed8b80 - Cache
+    cmake/3.30.1#6d832cf2d46f6ec969ca5ed5b41f91eb - Cache
+    gettext/0.21#a2bd3513f212013764c9040f4c70ed69 - Cache
+    gnu-config/cci.20210814#dc430d754f465e8c74463019672fb97b - Cache
+    libiconv/1.17#73fefc1b696e069df90fd1d18aa63edd - Cache
+    libtool/2.4.7#08316dad5c72c541ed21e039e4cf217b - Cache
+    m4/1.4.19#b38ced39a01e31fef5435bc634461fd2 - Cache
+    meson/1.2.1#d5d14e34214d5228747367a9c4c70b29 - Cache
+    meson/1.2.2#29cf77c283f6af08818f6fd8068c37e8 - Cache
+    meson/1.3.2#726f715cfedf3f94cc4d30a5d5d9c281 - Cache
+    meson/1.4.0#d04d88a761cf81e05206dbbe0f1bfea2 - Cache
+    meson/1.4.1#d1b27e4988cfee59b212addebb1474d5 - Cache
+    nasm/2.15.05#058c93b2214a49ca1cfe9f8f26205568 - Cache
+    nasm/2.16.01#d0aebbd20ccbb6ad9c9c753ab708098c - Cache
+    ninja/1.12.1#fd583651bf0c6a901943495d49878803 - Cache
+    pkgconf/2.0.3#f996677e96e61e6552d85e83756c328b - Cache
+    pkgconf/2.1.0#27f44583701117b571307cf5b5fe5605 - Cache
+    pkgconf/2.2.0#6462942a22803086372db44689ba825f - Cache
+    yasm/1.3.0#fb800a15413dca19bfaef9e4b5d50694 - Cache
+Resolved version ranges
+    b2/[>=5.2 <6]: b2/5.2.1
+    cmake/[>=3.16 <4]: cmake/3.30.1
+    cmake/[>=3.18 <4]: cmake/3.30.1
+    cmake/[>=3.19 <4]: cmake/3.30.1
+    cmake/[>=3.22 <4]: cmake/3.30.1
+    expat/[>=2.6.2 <3]: expat/2.6.2
+    ninja/[>=1.10.2 <2]: ninja/1.12.1
+    openssl/[>=1.1 <4]: openssl/3.3.1
+    zlib/[>=1.2.11 <2]: zlib/1.3.1
+
+======== Computing necessary packages ========
+conan_assimp_test/0.0.1: Main binary package '7ef0e4aa529c7ba5c7b9cccc2006e5e789976917' missing
+conan_assimp_test/0.0.1: Checking 11 compatible configurations
+conan_assimp_test/0.0.1: Compatible configurations not found in cache, checking servers
+conan_assimp_test/0.0.1: 'd0a0027560b90423c0ccd681bfae2212b596de79': compiler.cppstd=98
+conan_assimp_test/0.0.1: '77764c8fe8862de8f2b6e2038fbda92f80c5061c': compiler.cppstd=gnu98
+conan_assimp_test/0.0.1: '21e4d7ffe9e1b6c50bcfbbeae90db195d25c9a70': compiler.cppstd=11
+conan_assimp_test/0.0.1: '59daf9a8a1d7e1be6a5f15bf984c22cba01693d0': compiler.cppstd=gnu11
+conan_assimp_test/0.0.1: '1bf8d0ad8e69ca02f7754015b6879304fad54057': compiler.cppstd=14
+conan_assimp_test/0.0.1: 'a896bff062015fcafb5082c86f23b0a31983116e': compiler.cppstd=gnu14
+conan_assimp_test/0.0.1: '094fcfa1918161864ed484dacfc71ab4b8bdec95': compiler.cppstd=gnu17
+conan_assimp_test/0.0.1: '29ac8173f635a0d18ccd6d4727678de218de28e6': compiler.cppstd=20
+conan_assimp_test/0.0.1: 'd79564139690e43c9c9575cb5443737697040ac4': compiler.cppstd=gnu20
+conan_assimp_test/0.0.1: '05c6d9c1489d32e4bba10c94b9b1d79a57660774': compiler.cppstd=23
+conan_assimp_test/0.0.1: 'e6f289dc2e255c6bbffd75eed884a9565746ea5a': compiler.cppstd=gnu23
+Requirements
+    assimp/5.4.3#692649a2b1f19bc8991d96320a8a2b81:98f96efc7624ac9c7808cbfd885b71952d703eee#a4830e6100b0d81dbbadb0886bc54277 - Cache
+    autoconf/2.71#f9307992909d7fb3df459340f1932809:da39a3ee5e6b4b0d3255bfef95601890afd80709#5b77f70c17ad1741f5845d4e468a347e - Cache
+    automake/1.16.5#058bda3e21c36c9aa8425daf3c1faf50:9a4eb3c8701508aa9458b1a73d0633783ecc2270#9719e51a6a62041af6a63e00eef35434 - Cache
+    boost/1.84.0#a3599eafc99ffda1322c752cca0bfc10:43ddc3738aa2cd58962d50be712f78fbfbc09e45#91f1ed3686560e0e74405d2fb45ac9e7 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:40a4859ccb410e4d27426e07867eee61c5ce2b05#7abe1013e4ded340ea495261c497921e - Cache
+    bzip2/1.0.8#457c272f7da34cb9c67456dd217d36c4:432d7695adc526147073285e155d2ca0340bc76d#58eb04d3fdb530a6f24aa91bed89ea04 - Cache
+    clipper/6.4.2#8b2db6cabf546e0e937d75dd8b0d4b6d:87bbb286a7517318e730f10181ac32c50f1dbc94#00f26e7f7d91180d5790641c0718cd19 - Cache
+    conan_assimp_test/0.0.1#9959898ee4910b6bc92c3756b6a262e1:7ef0e4aa529c7ba5c7b9cccc2006e5e789976917 - Build
+    cpuinfo/cci.20231129#15e94782b128bee8bfd047f6102a4d21:4d9e6a210329116850cff601cc4db23e561d9a71#b31b50ae014a9e094becf8520c22ce9f - Cache
+    dav1d/1.4.3#5e2459e132c77183bd16d23d12fd8f4a:5a08ccd3ef3a922ac0845d713dfd93717d34cf5d#8020b605e8f507bb529b5c08d91a20fc - Cache
+    draco/1.5.6#c4fd529402e7954b0ed2305a386b0973:e7e01b57b0d814a5aa6f37568a1fc9c2823a5dc3#f64679ff0a7b7544d7d139782aa9fded - Cache
+    expat/2.6.2#2d385d0d50eb5561006a7ff9e356656b:aded8fb718ce53657d2b174704f00cbccc67d052#5d252f71c390d728b2a09732cfd51bdd - Cache
+    ffmpeg/6.1#d711645f40a8decb9f7c0217f8828f55:a76e800e1562bd9e63455b173ea0e57a89285512#5ad1a214efec704b08c04e2e393190e5 - Cache
+    flac/1.4.2#d4051f8b37ee93725dea40dfd6a10168:1f8881b726fd21d73b4d5a230097c6cbb4a76fa7#044ca83dfba886e61657586fa83a7b8e - Cache
+    fmt/10.2.1#8d582aeebdf05b6f0abe2911b926c3f4:03b63a6d963269e5adb57af4de2136006cf44110#93c64c27c120c8a8ecc6a3ec8fabb783 - Cache
+    freetype/2.13.2#7934d59c447d72edcd56025dc60e1aeb:ca0f8de67a8f18266df61435c2205c4fe6fa58b7#be4c51d5c63796b9f7329122903dcf18 - Cache
+    giflib/5.2.1#40245212d3adda9d502692704b0b35ab:878ca87e1d3b2a3850fd84bf6b6da0616041a33f#6d7a4920bbdd0fb35a01dad8e2b220c8 - Cache
+    hdf5/1.14.3#98d357e3200ae73e995b284ef199d919:ff689d9fcc09fce2870bd0e188ae009e68c62d56#5010d58f624925612cc7ea610adf0458 - Cache
+    imath/3.1.9#2e7f5802b247baae47235b4c8d5642c9:87bbb286a7517318e730f10181ac32c50f1dbc94#1d4130d0bc495a53ed39cbb7890e4554 - Cache
+    jbig/20160605#2d29fa02aacd76902e0d2cbbc24631ef:95b90d93a7025ab3fe00c19cf61dab2ec1bf1651#dfff47d609e9f66919a9b8291753f8a9 - Cache
+    kuba-zip/0.3.0#cac9d58fac5e8d16395edbdcda39cd7c:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#be92a630e0650e8605f3d202ae905e3a - Cache
+    lcms/2.14#8a8c02ab8c0631e06d705c38b171f053:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#edcb6811c6b184f7b3a4a67ceb08b0af - Cache
+    libalsa/1.2.10#e64d5e1ced869a2f676145bab4f4a181:0ae38841c7567e11ef9058ad376ee301173f5029#14fffb44026992aead7a1bace721e387 - Cache
+    libaom-av1/3.6.1#a2b22c70d6fce43887881431808ab8a6:0a6cf9afbd3e24a666abcaf47cd18201dd4d1ab9#e5bb9049f659904e317475adf0ead789 - Cache
+    libbacktrace/cci.20210118#a7691bfccd8caaf66309df196790a5a1:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#bf730b91f1be1b8484aaeef3de98619e - Cache
+    libcap/2.69#7ef2d60864c2e58e89db957be936dc49:b5e16bfc1c90834c7a2a9a40bf19330cdaf7a61f#828b92aa89ea9b5458e764eb06da7544 - Cache
+    libde265/1.0.12#6e7cec8c7e3b1c9bfb6761dfc4d1dbb8:9f7871587efe2eca4ff7761a840b23439489e128#6e62fb55a6163e364703236db73e682d - Cache
+    libdeflate/1.19#3ea74a4549efc14d4b1202dc4bfbf602:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#4ffd16bf076a72f3e3cb68b7fcd7bdbc - Cache
+    libfdk_aac/2.0.3#0115f6598be7303e042684e3a846b12d:87bbb286a7517318e730f10181ac32c50f1dbc94#afd81788a993c9b982b86f82e5d612da - Cache
+    libheif/1.16.2#2552c50c9cb84cf3d0791434ba677afd:76385b89316e7434cac1f0017520605283fede9a#401f3db7170ed8e044ecc6bd44f6a674 - Cache
+    libiconv/1.17#73fefc1b696e069df90fd1d18aa63edd:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#6b81c0a6b9b0e150449b2108c82c30bd - Cache
+    libjpeg/9e#3cd27a78643419450ee6d3739514d25c:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#cc1d6a1b2372d4fe7d1e5f4178e48d3d - Cache
+    libmp3lame/3.100#44b12d19316eb2b223d98d3e75dae438:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#620efc125b4c9e10c2e4a3e6c71926a0 - Cache
+    libpng/1.6.42#fdba4ebf89df3c55d6db0145a2a66a24:89f26a89b6e56e1284482eb7ac65948ce05dff35#cb8e42df23069227798a0c1240ec94d3 - Cache
+    libsndfile/1.2.2#b3662f832e29507e8d9840a43737cc14:d4faf082a8fbe4d09e4d8a20ab10778dee0355ad#a0f5713b35eb9fafd9547de8b6c072dc - Cache
+    libsquish/1.15#7f943e7d0ee7fc638d554d7a470a5f6c:e8a049e17e702fcb118555cc38a564cb117c8731#57206c79074fff9f2524a6022f29d28f - Cache
+    libsvtav1/2.1.0#d8c1783004eefc3980710bbc72ba8a4f:51a5d54960be40e80ab4eaf3ca04cc33eb59a399#4fad3243e616295001e582bdf39b51a9 - Cache
+    libtiff/4.6.0#51d0e7e15d032aeec1b64e65c44ecd9f:7b6617e6ca3a37f96b757df702bad82edd1fd117#31e7106210145bb068d9a564517ea974 - Cache
+    libtool/2.4.7#08316dad5c72c541ed21e039e4cf217b:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#2549d19fb177d8d8298750f0eb4f2d3a - Cache
+    libvpx/1.14.1#3b2a56aea1e29b9a8f7753030c620f38:e66eac6d03ce42acea4971776b8fbfdfc32872a3#a2851dd022c7f68aace13c648a283b49 - Cache
+    libwebp/1.3.2#52f69c4a31c5cf033fdd9230d77a8e38:0d9934d6bab23c047abf9b10238dcb9caf263430#f122b79b09f6bfb1e7119b9c3c76e7b1 - Cache
+    libx264/cci.20240224#3c88c23b44dfb42c6d5ccbc5c04900c7:60c149c0b186fac31a0fbfb0bb10dbc56c1a50c3#5e2b735fd53f7fb3ac29339ed32a749e - Cache
+    libx265/3.4#719e50b2b2c3fd1b9133fea12da42c62:8a5bea0450c6773944ed0acca7b6cedd7305e11d#0231cdb67a4cfe0df7fba23f7df9656f - Cache
+    m4/1.4.19#b38ced39a01e31fef5435bc634461fd2:3593751651824fb813502c69c971267624ced41a#cd8019a4f9b70880d548f7cc26569604 - Cache
+    minizip-ng/4.0.3#98f2b9125867cb682e8e09bdc949b701:f920b843d83212d50f34dd21b44e903ae9a38998#767ce50c3ed711ba04907c841250670f - Cache
+    minizip/1.2.13#75d20b6a37ef70126334467f61acadde:24b3153ae2c70c8def062cd8ca1b61bd50698727#bdb076871fc68004b09b551c854d0620 - Cache
+    mpg123/1.31.2#ce831c936b2284e2066ab3dc58a2628e:e6ca1307b9e52925d3cd64611fd21dcf59cb889f#b288c6931d894b67e13c984a016afa8f - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#dc22a6ba09b45e7034277d22919d831d - Cache
+    opencolorio/2.3.1#0f3cd8950a2ca0fee0b2b1e04d676f52:fe232086e8fcf5e1d40f73e62a611b6d79a7acbf#9c57af4db54a6220dc4609ff05268b4d - Cache
+    openddl-parser/0.5.1#1ed71b6fc636be990a506c802bf64831:87bbb286a7517318e730f10181ac32c50f1dbc94#954670d806599d88269db2ac548ebf02 - Cache
+    openexr/3.2.3#9729562cfe706ed8d5a9a7f398d09eab:603e63f9fa85b853f11261104ef5a5d9dbfca89e#0efe68a14f55427cdb92bca18c0a115d - Cache
+    openh264/2.4.1#f65570895428516317d5236ac3bc5360:87bbb286a7517318e730f10181ac32c50f1dbc94#0fbbc2b295fc87d877651b15c6c21569 - Cache
+    openimageio/2.5.16.0#0f58c8d82dd64a165ab3d436fe2f4609:dae0a8fa371fec05d6c54b76f386203aba62c2a6#be163850ae5c4aaa74cb2be860d25935 - Cache
+    openjpeg/2.5.2#6f7b733e151d1bbf5ed05cbabb846828:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#b130cc78802c3e907d3533fde0b66dff - Cache
+    openssl/3.3.1#279e86dc2a7dded8c1fe8512e775bdb1:e1e5437fbafc0588bdcff97c905793e695877ac3#ba40eaede57dd722b6c0ac6fb24e6d7d - Cache
+    opus/1.4#54631f551fc450783fb2df8cd63f80a2:29d7d9ff8851cf47abcc364d6a26a506a20694e4#b7f040298d73eac09c50a238b6674edd - Cache
+    poly2tri/cci.20130502#6f2ab4d3b3c07dc8d0b6282c14521b22:87bbb286a7517318e730f10181ac32c50f1dbc94#08b828b708422d9b427642b7c881d08a - Cache
+    ptex/2.4.2#ba6a60f9dabd40f83df6dafa24e014e9:b9e43745f2c2c551dfad5e9cf767f80cbe718473#63b23729264b0b71e6c356bff6955fb1 - Cache
+    pugixml/1.14#c6afdcf73d71858303d8260b0d76ff91:0262c5fda14237f70253cb3554da466c0986a5ef#d3f7862a8efe9fb40c7def151127f868 - Cache
+    pulseaudio/14.2#30afeff38a7770cb9cda17a66da49a19:58fa7426658dea9e6d4776232ddb5176e3c77948#6823feb9f8e29b23dd65bd09c50d244c - Cache
+    pystring/1.1.4#f2f8a4650090cf0138456f49842f9134:87bbb286a7517318e730f10181ac32c50f1dbc94#ba85850681ba710468dfabb5a3fce779 - Cache
+    vaapi/system#9fa40059fb979af4f9b301b84fb2dfa1:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+    vdpau/system#bdd7d010c4e3d8762a8f6f08a3cf6760:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:556667b4570ea8c6b669bffbd0710eea4ef2aeed#00b8944ac53af9bbd1af2330404f79fc - Cache
+    xorg/system#f626cbdd0ba57d9c53bce2d8b9362fad:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+    xz_utils/5.4.5#b885d1d79c9d30cff3803f7f551dbe66:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#0aad4225333ac9618a452e5654a0aa10 - Cache
+    yaml-cpp/0.8.0#720ad361689101a838b2c703a49e9c26:87bbb286a7517318e730f10181ac32c50f1dbc94#e665e771b921e5bac31a2a2212465e28 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:c81087b06d1a5beef0ad711fc32d45f7a425a8f3#274061dcec08a0f95c07639f5fff02e9 - Cache
+    zstd/1.5.5#1f239731dc45147c7fc2f54bfbde73df:37f60e96fabd90de19a29ec7e7968b118c0cedf4#a7d55f21ab874f7ccb67bedd344e1183 - Cache
+Build requirements
+Skipped binaries
+    rapidjson/cci.20230929, stb/cci.20230920, tsl-robin-map/1.2.1, utfcpp/4.0.1, autoconf/2.71, automake/1.16.5, b2/5.2.1, cmake/3.30.1, gettext/0.21, gnu-config/cci.20210814, libiconv/1.17, libtool/2.4.7, m4/1.4.19, meson/1.2.1, meson/1.2.2, meson/1.3.2, meson/1.4.0, meson/1.4.1, nasm/2.15.05, nasm/2.16.01, ninja/1.12.1, pkgconf/2.0.3, pkgconf/2.1.0, pkgconf/2.2.0, yasm/1.3.0
+vaapi/system: System requirements:  already installed
+vdpau/system: System requirements:  already installed
+xorg/system: System requirements:  already installed
+xorg/system: System requirements:  already installed
+
+======== Installing packages ========
+brotli/1.1.0: Already installed! (1 of 69)
+bzip2/1.0.8: Already installed! (2 of 69)
+clipper/6.4.2: Already installed! (3 of 69)
+cpuinfo/cci.20231129: Already installed! (4 of 69)
+draco/1.5.6: Already installed! (5 of 69)
+expat/2.6.2: Already installed! (6 of 69)
+fmt/10.2.1: Already installed! (7 of 69)
+giflib/5.2.1: Already installed! (8 of 69)
+imath/3.1.9: Already installed! (9 of 69)
+jbig/20160605: Already installed! (10 of 69)
+kuba-zip/0.3.0: Already installed! (11 of 69)
+libaom-av1/3.6.1: Already installed! (12 of 69)
+libbacktrace/cci.20210118: Already installed! (13 of 69)
+libcap/2.69: Already installed! (14 of 69)
+libde265/1.0.12: Already installed! (15 of 69)
+libdeflate/1.19: Already installed! (16 of 69)
+libfdk_aac/2.0.3: Already installed! (17 of 69)
+libiconv/1.17: Already installed! (18 of 69)
+libjpeg/9e: Already installed! (19 of 69)
+libsquish/1.15: Already installed! (20 of 69)
+libwebp/1.3.2: Already installed! (21 of 69)
+m4/1.4.19: Already installed! (22 of 69)
+ogg/1.3.5: Already installed! (23 of 69)
+openddl-parser/0.5.1: Already installed! (24 of 69)
+openjpeg/2.5.2: Already installed! (25 of 69)
+opus/1.4: Already installed! (26 of 69)
+poly2tri/cci.20130502: Already installed! (27 of 69)
+pugixml/1.14: Already installed! (28 of 69)
+pystring/1.1.4: Already installed! (29 of 69)
+vaapi/system: Already installed! (30 of 69)
+vdpau/system: Already installed! (31 of 69)
+xorg/system: Already installed! (32 of 69)
+xz_utils/5.4.5: Already installed! (33 of 69)
+yaml-cpp/0.8.0: Already installed! (34 of 69)
+zlib/1.3.1: Already installed! (35 of 69)
+zstd/1.5.5: Already installed! (36 of 69)
+libmp3lame/3.100: Already installed! (37 of 69)
+libvpx/1.14.1: Already installed! (38 of 69)
+libx264/cci.20240224: Already installed! (39 of 69)
+libx265/3.4: Already installed! (40 of 69)
+dav1d/1.4.3: Already installed! (41 of 69)
+lcms/2.14: Already installed! (42 of 69)
+mpg123/1.31.2: Already installed! (43 of 69)
+mpg123/1.31.2: Appending PATH environment variable: /home/esteban/.conan2/p/b/mpg12bd908536c7eb3/p/bin
+openh264/2.4.1: Already installed! (44 of 69)
+libalsa/1.2.10: Already installed! (45 of 69)
+autoconf/2.71: Already installed! (46 of 69)
+boost/1.84.0: Already installed! (47 of 69)
+flac/1.4.2: Already installed! (48 of 69)
+hdf5/1.14.3: Already installed! (49 of 69)
+libheif/1.16.2: Already installed! (50 of 69)
+libpng/1.6.42: Already installed! (51 of 69)
+libsvtav1/2.1.0: Already installed! (52 of 69)
+libtiff/4.6.0: Already installed! (53 of 69)
+minizip/1.2.13: Already installed! (54 of 69)
+openexr/3.2.3: Already installed! (55 of 69)
+openssl/3.3.1: Already installed! (56 of 69)
+ptex/2.4.2: Already installed! (57 of 69)
+vorbis/1.3.7: Already installed! (58 of 69)
+assimp/5.4.3: Already installed! (59 of 69)
+automake/1.16.5: Already installed! (60 of 69)
+freetype/2.13.2: Already installed! (61 of 69)
+minizip-ng/4.0.3: Already installed! (62 of 69)
+libsndfile/1.2.2: Already installed! (63 of 69)
+libtool/2.4.7: Already installed! (64 of 69)
+libtool/2.4.7: WARN: The use of 'unix_path_legacy_compat' is deprecated in Conan 2.0 and does not perform path conversions. This is retained for compatibility with Conan 1.x and will be removed in a future version.
+libtool/2.4.7: WARN: The use of 'unix_path_legacy_compat' is deprecated in Conan 2.0 and does not perform path conversions. This is retained for compatibility with Conan 1.x and will be removed in a future version.
+opencolorio/2.3.1: Already installed! (65 of 69)
+opencolorio/2.3.1: Appending PATH env var with: /home/esteban/.conan2/p/b/openc80c333d3cc3a8/p/bin
+pulseaudio/14.2: Already installed! (66 of 69)
+ffmpeg/6.1: Already installed! (67 of 69)
+openimageio/2.5.16.0: Already installed! (68 of 69)
+
+-------- Installing package conan_assimp_test/0.0.1 (69 of 69) --------
+conan_assimp_test/0.0.1: Building from source
+conan_assimp_test/0.0.1: Package conan_assimp_test/0.0.1:7ef0e4aa529c7ba5c7b9cccc2006e5e789976917
+conan_assimp_test/0.0.1: Copying sources to build folder
+conan_assimp_test/0.0.1: Building your package in /home/esteban/.conan2/p/b/conan457eee1dc1feb/b
+conan_assimp_test/0.0.1: Calling generate()
+conan_assimp_test/0.0.1: Generators folder: /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/build/Release/generators
+conan_assimp_test/0.0.1: CMakeToolchain generated: conan_toolchain.cmake
+conan_assimp_test/0.0.1: CMakeToolchain generated: /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/build/Release/generators/CMakePresets.json
+conan_assimp_test/0.0.1: CMakeToolchain generated: /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/CMakeUserPresets.json
+conan_assimp_test/0.0.1: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(assimp)
+    find_package(OpenImageIO)
+    target_link_libraries(... assimp::assimp openimageio::openimageio)
+conan_assimp_test/0.0.1: Generating aggregated env files
+conan_assimp_test/0.0.1: Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+conan_assimp_test/0.0.1: Calling build()
+conan_assimp_test/0.0.1: Running CMake.configure()
+conan_assimp_test/0.0.1: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="/home/esteban/.conan2/p/b/conan457eee1dc1feb/p" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "/home/esteban/.conan2/p/b/conan457eee1dc1feb/b" --loglevel=VERBOSE --graphviz=graph.dot
+-- Using Conan toolchain: /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Setting CMAKE_POSITION_INDEPENDENT_CODE=ON (options.fPIC)
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: C++ Standard 17 with extensions OFF
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: Target declared 'assimp::assimp'
+-- Conan: Library assimp found /home/esteban/.conan2/p/b/assim95165023a258d/p/lib/libassimp.a
+-- Conan: Found: /home/esteban/.conan2/p/b/assim95165023a258d/p/lib/libassimp.a
+-- Conan: Component target declared 'MINIZIP::minizip'
+-- Conan: Library minizip-ng found /home/esteban/.conan2/p/b/miniz5ba84dfb32026/p/lib/libminizip-ng.a
+-- Conan: Found: /home/esteban/.conan2/p/b/miniz5ba84dfb32026/p/lib/libminizip-ng.a
+-- Conan: Library minizip-ng found /home/esteban/.conan2/p/b/miniz5ba84dfb32026/p/lib/libminizip-ng.a
+-- Conan: Found: /home/esteban/.conan2/p/b/miniz5ba84dfb32026/p/lib/libminizip-ng.a
+-- Conan: Component target declared 'zstd::libzstd_static'
+-- Conan: Library zstd found /home/esteban/.conan2/p/b/zstd033e4e74bec02/p/lib/libzstd.a
+-- Conan: Found: /home/esteban/.conan2/p/b/zstd033e4e74bec02/p/lib/libzstd.a
+-- Conan: Library zstd found /home/esteban/.conan2/p/b/zstd033e4e74bec02/p/lib/libzstd.a
+-- Conan: Found: /home/esteban/.conan2/p/b/zstd033e4e74bec02/p/lib/libzstd.a
+-- Conan: Target declared 'LibLZMA::LibLZMA'
+-- Conan: Library lzma found /home/esteban/.conan2/p/b/xz_ut8342edb6903bc/p/lib/liblzma.a
+-- Conan: Found: /home/esteban/.conan2/p/b/xz_ut8342edb6903bc/p/lib/liblzma.a
+-- Conan: Including build module from '/home/esteban/.conan2/p/b/xz_ut8342edb6903bc/p/lib/cmake/conan-official-xz_utils-variables.cmake'
+-- Conan: Target declared 'BZip2::BZip2'
+-- Conan: Library bz2 found /home/esteban/.conan2/p/b/bzip218c8d9826197c/p/lib/libbz2.a
+-- Conan: Found: /home/esteban/.conan2/p/b/bzip218c8d9826197c/p/lib/libbz2.a
+-- Conan: Including build module from '/home/esteban/.conan2/p/b/bzip218c8d9826197c/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- Conan: Target declared 'Iconv::Iconv'
+-- Conan: Library iconv found /home/esteban/.conan2/p/b/libicb597098130be9/p/lib/libiconv.a
+-- Conan: Found: /home/esteban/.conan2/p/b/libicb597098130be9/p/lib/libiconv.a
+-- Conan: Library charset found /home/esteban/.conan2/p/b/libicb597098130be9/p/lib/libcharset.a
+-- Conan: Found: /home/esteban/.conan2/p/b/libicb597098130be9/p/lib/libcharset.a
+-- Conan: Component target declared 'OpenSSL::Crypto'
+-- Conan: Component target declared 'OpenSSL::SSL'
+-- Conan: Target declared 'openssl::openssl'
+-- Conan: Library ssl found /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libssl.a
+-- Conan: Found: /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libssl.a
+-- Conan: Library crypto found /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libcrypto.a
+-- Conan: Found: /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libcrypto.a
+-- Conan: Library ssl found /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libssl.a
+-- Conan: Found: /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libssl.a
+-- Conan: Library crypto found /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libcrypto.a
+-- Conan: Found: /home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/libcrypto.a
+-- Conan: Target declared 'ZLIB::ZLIB'
+-- Conan: Library z found /home/esteban/.conan2/p/b/zlib012f7751e42e8/p/lib/libz.a
+-- Conan: Found: /home/esteban/.conan2/p/b/zlib012f7751e42e8/p/lib/libz.a
+-- Conan: Including build module from '/home/esteban/.conan2/p/b/opens8a2b5b5c98a12/p/lib/cmake/conan-official-openssl-variables.cmake'
+-- Conan: Target declared 'zip::zip'
+-- Conan: Library zip found /home/esteban/.conan2/p/b/kuba-076d56ee6aac7/p/lib/libzip.a
+-- Conan: Found: /home/esteban/.conan2/p/b/kuba-076d56ee6aac7/p/lib/libzip.a
+-- Conan: Target declared 'poly2tri::poly2tri'
+-- Conan: Library poly2tri found /home/esteban/.conan2/p/b/poly24dde92861f5f7/p/lib/libpoly2tri.a
+-- Conan: Found: /home/esteban/.conan2/p/b/poly24dde92861f5f7/p/lib/libpoly2tri.a
+-- Conan: Target declared 'draco::draco'
+-- Conan: Library draco found /home/esteban/.conan2/p/b/draco627a5000ab06f/p/lib/libdraco.a
+-- Conan: Found: /home/esteban/.conan2/p/b/draco627a5000ab06f/p/lib/libdraco.a
+-- Conan: Target declared 'clipper::clipper'
+-- Conan: Library polyclipping found /home/esteban/.conan2/p/b/clipp9b9911fb5ffac/p/lib/libpolyclipping.a
+-- Conan: Found: /home/esteban/.conan2/p/b/clipp9b9911fb5ffac/p/lib/libpolyclipping.a
+-- Conan: Target declared 'openddlparser::openddlparser'
+-- Conan: Library openddlparser found /home/esteban/.conan2/p/b/opendb0661b315dd6e/p/lib/libopenddlparser.a
+-- Conan: Found: /home/esteban/.conan2/p/b/opendb0661b315dd6e/p/lib/libopenddlparser.a
+-- Conan: Target declared 'pugixml::pugixml'
+-- Conan: Library pugixml found /home/esteban/.conan2/p/b/pugixfb068368448c4/p/lib/libpugixml.a
+-- Conan: Found: /home/esteban/.conan2/p/b/pugixfb068368448c4/p/lib/libpugixml.a
+-- Configuring done (0.2s)
+CMake Error at build/Release/generators/assimp-Target-release.cmake:15 (set_property):
+  The link interface of target "assimp_DEPS_TARGET" contains:
+
+    minizip::minizip
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  build/Release/generators/assimpTargets.cmake:24 (include)
+  build/Release/generators/assimp-config.cmake:16 (include)
+  CMakeLists.txt:4 (find_package)
+
+
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.Generate graphviz: /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/build/Release/graph.dot
+
+
+conan_assimp_test/0.0.1: ERROR: 
+Package '7ef0e4aa529c7ba5c7b9cccc2006e5e789976917' build failed
+conan_assimp_test/0.0.1: WARN: Build folder /home/esteban/.conan2/p/b/conan457eee1dc1feb/b/build/Release
+ERROR: conan_assimp_test/0.0.1: Error in build() method, line 47
+	cmake.configure(cli_args=["--graphviz=graph.dot"])
+	ConanException: Error 1 while executing
