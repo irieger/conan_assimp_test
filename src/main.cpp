@@ -4,6 +4,8 @@
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 
+#include "colorspace.hpp"
+
 int main(int argc, char** argv){
 
     Assimp::Importer importer;

@@ -40,6 +40,7 @@ class AliceVisionRecipe(ConanFile):
 
         deps = CMakeDeps(self)
         deps.set_property("minizip", "cmake_target_name", "MINIZIP::minizip")
+        deps.set_property("minizip", "cmake_file_name", "MINIZIP")
         deps.generate()
         
     def build(self):
