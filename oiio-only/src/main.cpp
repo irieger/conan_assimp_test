@@ -13,6 +13,7 @@ int main(int argc, char* argv[])
     OIIO::ColorConfig testConfig(fpath.string());
 
     std::cout << "Number of color spaces: " << testConfig.getNumColorSpaces() << std::endl;
+    std::cout << "Lin space: " << testConfig.getColorSpaceNameByRole("scene_linear") << std::endl;
 
     Assimp::Importer importer;
 
@@ -21,6 +22,7 @@ int main(int argc, char* argv[])
         std::cout << "Trying to load path: " << argv[1] << std::endl;
         OIIO::ColorConfig testConfig2(argv[1]);
         std::cout << "Number of color spaces: " << testConfig2.getNumColorSpaces() << std::endl;
+        std::cout << "Lin space: " << testConfig2.getColorSpaceNameByRole("scene_linear") << std::endl;
     }
 
     if (argc >= 3)
