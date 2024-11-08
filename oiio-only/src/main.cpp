@@ -3,6 +3,8 @@
 
 #include <OpenImageIO/color.h>
 
+#include <assimp/Importer.hpp>
+
 
 int main(int argc, char* argv[])
 {
@@ -12,11 +14,18 @@ int main(int argc, char* argv[])
 
     std::cout << "Number of color spaces: " << testConfig.getNumColorSpaces() << std::endl;
 
-    if (argc == 2)
+    Assimp::Importer importer;
+
+    if (argc >= 2)
     {
         std::cout << "Trying to load path: " << argv[1] << std::endl;
         OIIO::ColorConfig testConfig2(argv[1]);
         std::cout << "Number of color spaces: " << testConfig2.getNumColorSpaces() << std::endl;
+    }
+
+    if (argc >= 3)
+    {
+        const aiScene* scene = scene = importer.ReadFile(argv[2], 0);
     }
 
     return 0;
