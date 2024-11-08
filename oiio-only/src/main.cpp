@@ -12,5 +12,12 @@ int main(int argc, char* argv[])
 
     std::cout << "Number of color spaces: " << testConfig.getNumColorSpaces() << std::endl;
 
+    if (argc == 2)
+    {
+        std::cout << "Trying to load path: " << argv[1] << std::endl;
+        OIIO::ColorConfig testConfig2(argv[1]);
+        std::cout << "Number of color spaces: " << testConfig2.getNumColorSpaces() << std::endl;
+    }
+
     return 0;
 }

@@ -31,7 +31,7 @@ class AliceVisionRecipe(ConanFile):
         cmake_layout(self)
 
     def requirements(self):
-        #self.requires("assimp/5.4.3")
+        self.requires("assimp/5.4.3")
         self.requires("openimageio/2.5.16.0")
 
     def generate(self):
@@ -39,8 +39,8 @@ class AliceVisionRecipe(ConanFile):
         tc.generate()
 
         deps = CMakeDeps(self)
-        #deps.set_property("minizip", "cmake_target_name", "MINIZIP::minizip")
-        #deps.set_property("minizip", "cmake_file_name", "MINIZIP")
+        deps.set_property("minizip", "cmake_target_name", "MINIZIP::minizip")
+        deps.set_property("minizip", "cmake_file_name", "MINIZIP")
         deps.generate()
         
     def build(self):
